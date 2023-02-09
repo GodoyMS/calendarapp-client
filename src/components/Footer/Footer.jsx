@@ -1,7 +1,5 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
-import Image from "next/image";
-import Link from "@/src/Link";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
@@ -30,7 +28,7 @@ export default function Footer() {
           }}
         >
           <Typography variant="caption" color="initial">
-            Copyright ©2023. [] Created By <Link href="https://github.com/GodoyMS"> Godoy Muñoz Solorzano</Link> 
+            Copyright ©2023. Created By <a style={{color:"gray", textDecoration:"none",fontWeight:"bold"}} href="https://github.com/GodoyMS"> Godoy Muñoz Solorzano</a> 
           </Typography>
         </Box>
       </Container>
