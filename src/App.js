@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Calendar  from './pages/Calendar';
+import Events from './pages/Events';
+import AppBar from './components/AppBar/AppBar';
+import { Container } from '@mui/material';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+
+    <div className='App'>
+      <AppBar/>
+      <Container sx={{marginY:5}}>
+          <Routes>
+            <Route path="/" element={<Calendar/>} />
+            <Route path="/events" element={<Events/>} /> 
+          </Routes>
+
+      </Container>
+     
+
+      
+
     </div>
+    </BrowserRouter>
+
   );
 }
 
