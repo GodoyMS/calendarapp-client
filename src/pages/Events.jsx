@@ -91,7 +91,7 @@ const Events = () => {
               
               <Typography  color={blue[500]} variant='h3'textAlign={'center'} marginY={2} fontSize={25} sx={{display:'flex',alignItems:'center',justifyContent:'center',gap:'1rem'}}> {event.title}<EventAvailableIcon color='primary'/></Typography>
               <Typography variant='subtitle1' textAlign={'center'} marginY={2}>{format(new Date( event.startDate), 'MM eeee, yyyy h:mm bbbb OOOO')}</Typography>
-                <Button sx={{width:'100%'}} variant="outlined" color='warning' onClick={()=>handleOpen(event._id)}>Borrar{event.title}</Button>
+                <Button sx={{width:'100%'}} variant="outlined" color='warning' onClick={()=>handleOpen(event._id)}>Borrar evento</Button>
                 <Modal
                 key={event._id}
                 hideBackdrop
