@@ -16,7 +16,7 @@ const Calendar=()=> {
      useEffect(()=>{
       const allData=async()=>{
         try {
-          const res=await axios.get('http://localhost:5000/api/events')
+          const res=await axios.get('https://calendar-app-server-frankfurt-server.onrender.com/api/events')
           console.log(res.data);
           setListEvents( res.data)
   

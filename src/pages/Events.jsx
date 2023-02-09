@@ -34,7 +34,7 @@ const Events = () => {
      useEffect(()=>{
       const allData=async()=>{
         try {
-          const res=await axios.get('http://https://calendar-app-server-frankfurt-server.onrender.com/api/events')
+          const res=await axios.get('https://calendar-app-server-frankfurt-server.onrender.com/api/events')
           console.log(res.data);
           SetAllEvents(res.data)
   
@@ -49,7 +49,7 @@ const Events = () => {
 
      const handleClickDelete= async(id)=>{
       try{
-        const res=axios.delete(`http://localhost:5000/api/event/${id}`)
+        const res=axios.delete(`https://calendar-app-server-frankfurt-server.onrender.com/api/event/${id}`)
         const newListItem=allEvents.filter(item=>item._id !== id)
         SetAllEvents(newListItem);
         setOpen(false)
