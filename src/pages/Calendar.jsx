@@ -38,7 +38,7 @@ const Calendar=()=> {
     calendarApi.unselect();
     console.log(info)
     try {
-      const response=await axios.post('http://localhost:5000/api/event',{title:title, startDate:info.startStr, finishDate:info.endStr})
+      const response=await axios.post('https://calendar-app-server-frankfurt-server.onrender.com/api/event',{title:title, startDate:info.startStr, finishDate:info.endStr})
       console.log(response);
       setListEvents(prev=>[...prev,response .data])
 
