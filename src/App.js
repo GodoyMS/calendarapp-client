@@ -4,6 +4,7 @@ import Calendar  from './pages/Calendar';
 import Events from './pages/Events';
 import AppBar from './components/AppBar/AppBar';
 import { Container } from '@mui/material';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +18,7 @@ function App() {
           </Routes>
 
       </Container>
-     
+      <Footer />  
 
       
 
